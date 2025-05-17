@@ -1,12 +1,14 @@
 
 
-
-
-
-body {
+h1 {
     text-align: center;
-  }
-
+}
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -42,4 +44,35 @@ footer {
 #active {
   background-color: white;
   color: steelblue;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+    width: 80%;
+}
+
+a {
+  font-size: 1.5em;
+}
+
+* {
+    border: 2px solid blue;
+}
+main p {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+a:hover {
+    background-color: white;
+    color: steelblue;
 }
