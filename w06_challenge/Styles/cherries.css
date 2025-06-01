@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    width: 50%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cherry-image {
+    position: relative;
+    text-align: center;
+}
+
+.cherry-image img {
+    width: 250px;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+
+.text {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.tart {
+    left: -60px;
+    top: 30px;
+}
+
+.sweet {
+    right: -40px;
+    bottom: 10px;
+}
+
+.right-side {
+    width: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cherries-text {
+    font-size: 2.5rem;
+    color: red;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}

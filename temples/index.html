@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDS Temples History</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header>
+    <h1>LDS Temples History and Expansion</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('timeline')">Temple Timeline</a>
+    <a href="#" onclick="showPage('announcements')">Prophetic Announcements</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>What is a Temple?</h2>
+      <p>Temples of The Church of Jesus Christ of Latter-day Saints are considered houses of the Lord where sacred ordinances and covenants are made. Unlike regular meetinghouses, temples are used for special worship and eternal family bonds.</p>
+    </section>
+
+    <section id="timeline" class="hidden">
+      <h2>Temple Timeline and Global Spread</h2>
+      <p>Explore the map below to see how temples have spread across the globe over time.</p>
+      <!-- Replace the src with your actual ArcGIS Online embed URL -->
+      <iframe src="https://www.arcgis.com/apps/MapSeries/index.html?appid=YOUR_APP_ID_HERE"></iframe>
+    </section>
+
+    <section id="announcements" class="hidden">
+      <h2>Temple Announcements by Prophets</h2>
+      <p>This page will list each temple and the prophet who announced its construction, organized by date and prophet.</p>
+      <!-- Content to be filled dynamically or statically as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LDS Temple History Project</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll('main > section');
+      sections.forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+  </script>
+</body>
+
+</html>
