@@ -295,4 +295,109 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
- 
+
+/* --- Rivers Page Styles --- */
+.rivers-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.river {
+    background-color: #fffaf3;
+    border: 1px solid #d9c2a3;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #ccc;
+    border-radius: 10px;
+}
+
+.river-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.river-img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #888;
+}
+
+.river-details h2 {
+    margin-bottom: 10px;
+    color: #5b4c40;
+}
+
+.river-details p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.river-desc {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #4a3f35;
+    margin-top: 10px;
+}
+
+/* --- Rivers Hero Section --- */
+.rivers-hero {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin: 40px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rivers-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.rivers-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(91, 76, 64, 0.7);
+    color: #f4f1ee;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.rivers-hero-text h2 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Rock Salt', cursive;
+}
+
+.rivers-hero-text p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .river-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .river-img {
+        width: 100%;
+    }
+}
