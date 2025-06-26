@@ -401,3 +401,90 @@ footer p a:hover {
         width: 100%;
     }
 }
+
+/* --- Contact Us Page Section --- */
+.contactus-body {
+  text-align: center;
+  background-color: #f4f1ee;
+  padding: 40px 20px;
+}
+
+.contactus-body form {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #fffaf3;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.contactus-body p + p {
+  margin-top: 1em;
+}
+
+.contactus-body label {
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+  margin-right: 10px;
+  color: #5b4c40;
+  font-weight: bold;
+}
+
+.contactus-body input,
+.contactus-body textarea {
+  font: 1em 'Raleway', sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.contactus-body input:focus,
+.contactus-body textarea:focus {
+  outline: none;
+  border-color: #8f7a66;
+  box-shadow: 0 0 5px rgba(143, 122, 102, 0.5);
+}
+
+.contactus-body textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+.contactus-body .button {
+  text-align: center;
+  margin-top: 1.5em;
+
+}
+
+.contactus-body button {
+  margin-left: 0.5em;
+  background-color: #8f7a66;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactus-body button:hover {
+  background-color: #a8907c;
+}
+.contactus-body #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
