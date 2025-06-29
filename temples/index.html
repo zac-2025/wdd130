@@ -6,52 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LDS Temples History</title>
   <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>LDS Temples History and Expansion</h1>
+    <h1>
+      The Church of Jesus Christ of Latter-day Saints<br> 
+      Temples History and Expansion
+    </h1>
   </header>
-
+ 
   <nav>
-    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="index.html" onclick="showPage('home')">Home</a>
     <a href="announcements.html" target="_blank">Announcements</a>
     <a href="timeline.html" target="_blank">Timeline</a>
   </nav>
 
-  <main>
-    <section id="home">
-      <h2>What is a Temple?</h2>
-      <p>Temples of The Church of Jesus Christ of Latter-day Saints are considered houses of the Lord where sacred ordinances and covenants are made. Unlike regular meetinghouses, temples are used for special worship and eternal family bonds.</p>
-    </section>
+<main>
+    <!-- Hero Section -->
+  <section class="hero" style="background-image: url('images/Temples-during-the-World.jpg');">
+    <div class="hero-content">
+      <h2>Temples: A House of God</h2>
+      <p>
+        This website serves as a central hub of information, offering history, updates, photos, and guidance. Explore the 
+        Timeline to see how temples have expanded over the years, or visit the Announcements page to stay updated on 
+        closures, events, and historical facts. Each page is designed to help members and visitors feel more connected to the 
+        purpose of temples and to inspire a greater appreciation for their spiritual power.
+      </p>
+    </div>
+  </section>
 
-    <section id="timeline" class="hidden">
-      <h2>Temple Timeline and Global Spread</h2>
-      <p>Explore the map below to see how temples have spread across the globe over time.</p>
-      <!-- Replace the src with your actual ArcGIS Online embed URL -->
-      <iframe src="https://www.arcgis.com/apps/MapSeries/index.html?appid=YOUR_APP_ID_HERE"></iframe>
-    </section>
+    <!-- Blog Card Grid -->
+    <section class="card-grid">
+      <div class="temple-card">
+        <img src="images/temple_entry.jpeg" alt="Temple image" />
+        <div class="temple-info">
+          <p class="category">Category</p>
+          <h3>Who can go to the Temple?</h3>
+          <p>
+            Before the temple is dedicated, there is an open house where anyone can attend. After it is dedicated,
+            only members of the Church of Jesus Christ of Latter-day Saints who have qualified to have a temple 
+            recommend may enter. Anyone who is a member of the Church who is willing to follow the standards required
+            to receive a recommend can do so. 
+          </p>
+        </div>
+      </div>
 
-    <section id="announcements" class="hidden">
-      <h2>Temple Announcements by Prophets</h2>
-      <p>This page will list each temple and the prophet who announced its construction, organized by date and prophet.</p>
-      <!-- Content to be filled dynamically or statically as needed -->
+      <div class="temple-card">
+        <img src="images/temple_holiness_to_the_lord.jpg" alt="Temple image" />
+        <div class="temple-info">
+          <p class="category">Category</p>
+          <h3>Christ is the center of the Temple</h3>
+          <p>
+            In the Temple we preform ordinances(make promises) first for ourselves and later for our 
+            deseaced ansestors. These promises are made with Jesus Christ by the power of His preisthood.
+            All ordinances are centered on Christ and becoming more like Him. 
+          </p>
+
+        </div>
+      </div>
+
+      <div class="temple-card">
+        <img src="images/temple_sealing.jpeg" alt="Temple image" />
+        <div class="temple-info">
+          <p class="category">Category</p>
+          <h3>What is a Temple?</h3>
+          <p>
+            Temples are more than just buildings. They are considered the House of the Lord—places where individuals 
+            can make sacred covenants, feel God’s presence, and receive guidance through eternal ordinances. Every element 
+            of the temple, from its architecture to its artwork, points toward eternal families and divine truths.
+          </p>
+
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 LDS Temple History Project</p>
+    <p>
+      &copy; 2025 LDS Temple History Project | 
+     <a href="site-plan.html" style="color: #fff; text-decoration: underline;">Site Plan</a>
+    </p>
   </footer>
-
-  <script>
-    function showPage(pageId) {
-      const sections = document.querySelectorAll('main > section');
-      sections.forEach(section => {
-        section.classList.add('hidden');
-      });
-      document.getElementById(pageId).classList.remove('hidden');
-    }
-  </script>
 </body>
 
 </html>
