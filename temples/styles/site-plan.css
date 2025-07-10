@@ -1,7 +1,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 
 
@@ -11,8 +11,8 @@ Fonts are separated by a | */
   --accent1-color: #a67c52;
   --accent2-color: #2c3e50;
 
-  --heading-font: 'Dancing Script', cursive;
-  --paragraph-font: 'Raleway', sans-serif;
+  --heading-font: 'Merriweather', serif;
+  --paragraph-font:  'Lora', serif;
 
   --headline-color-on-white: #5a5a5a;
   --headline-color-on-color: white;

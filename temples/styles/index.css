@@ -5,11 +5,16 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lora', serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
 
 header {
   background-color: #003366;
@@ -35,7 +40,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-
+ 
 main {
   padding: 20px;
   max-width: 1200px;

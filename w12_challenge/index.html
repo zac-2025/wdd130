@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body, html {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      height: 100vh; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .bg-text {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      border: 10px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .img1 { background-image: url("images/salt_lake_temple_long.jpg"); }
+    .img2 { background-image: url("images/helena_montana_temple_exterior.jpeg"); }
+    .img3 { background-image: url("images/rome_italy_temple.jpeg"); }
+    .img4 { background-image: url("images/Temples-during-the-World.jpg"); }
+    .img5 { background-image: url("images/temple_holiness_to_the_lord.jpg"); }
+    .img6 { background-image: url("images/temple_entry.jpeg"); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-image img1">
+    <div class="bg-text">Salt Lake Temple</div>
+  </div>
+
+  <div class="bg-image img2">
+    <div class="bg-text">Helena, Montana Temple</div>
+  </div>
+
+  <div class="bg-image img3">
+    <div class="bg-text">Rome, Italy Temple</div>
+  </div>
+
+  <div class="bg-image img4">
+    <div class="bg-text">Temples in the world</div>
+  </div>
+
+  <div class="bg-image img5">
+    <div class="bg-text">Holiness to the Lord</div>
+  </div>
+
+  <div class="bg-image img6">
+    <div class="bg-text">Temple Entry</div>
+  </div>
+
+</body>
+</html>
