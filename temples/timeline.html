@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Timeline</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/index.css" />
 </head>
- 
+
 <body>
   <header>
     <h1>Temple Timeline</h1>
-
   </header>
-  
+
   <nav>
     <a href="index.html" onclick="showPage('home')">Home</a>
     <a href="announcements.html" target="_blank">Announcements</a>
@@ -21,11 +20,17 @@
   </nav>
 
   <main>
-    <section>
+    <section id="timeline">
       <h2>Interactive Temple Timeline Map</h2>
       <p>This timeline visualizes the construction and dedication of temples over time.</p>
-      
-      <iframe src="https://zcp.maps.arcgis.com/apps/instant/slider/index.html?appid=393b3bb98c4c44f5996100b531c0cbbd"></iframe>
+
+      <div class="iframe-container">
+        <iframe
+          src="https://zcp.maps.arcgis.com/apps/instant/slider/index.html?appid=393b3bb98c4c44f5996100b531c0cbbd"
+          title="Temple Timeline Map"
+          aria-label="Interactive timeline map of temple constructions">
+        </iframe>
+      </div>
     </section>
   </main>
 
